@@ -131,6 +131,7 @@ enum {
 enum EscFunction {
 	EscFunction_None = 0,
 	EscFunction_Minimize,
+	EscFunction_Dbclick_Exit,
 	EscFunction_Exit,
 };
 
