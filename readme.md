@@ -12,6 +12,7 @@ Latest development builds (artifacts in Release configuration for each compiler 
 | [![Build status](https://github.com/zufuliu/notepad4/workflows/CI/badge.svg)](https://github.com/zufuliu/notepad4/actions) | [![Build status](https://ci.appveyor.com/api/projects/status/github/zufuliu/notepad4?branch=main&svg=true)](https://ci.appveyor.com/project/zufuliu/notepad4) |
 
 ## [Screenshots](https://github.com/zufuliu/notepad4/wiki/Screenshots)
+![image](https://github.com/user-attachments/assets/3ae689e3-aa38-41b2-ab4c-23aa0aa31efe)
 ![v24.07 HD](https://raw.githubusercontent.com/wiki/zufuliu/notepad4/screenshots/v24.07HD.png)
 
 ## Changes compared to [Notepad2](https://www.flos-freeware.ch/notepad2.html) or [Notepad2-mod](https://xhmikosr.github.io/notepad2-mod/):
