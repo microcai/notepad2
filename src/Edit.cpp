@@ -5311,6 +5311,14 @@ void EditFindPrev(const EDITFINDREPLACE *lpefr, bool fExtendSelection) noexcept 
 	const Sci_Position iSelPos = SciCall_GetCurrentPos();
 	const Sci_Position iSelAnchor = SciCall_GetAnchor();
 
+	const auto iSelLen = SciCall_GetSelTextLength();
+	if (iSelLen != 0) {
+		auto buf = NP2HeapAlloc(iSelLen + 1);
+		SciCall_GetSelText((char *)buf);
+		strncpy(szFind2, (char *)buf, NP2_FIND_REPLACE_LIMIT);
+		NP2HeapFree(buf);
+	}
+
 	Sci_TextToFindFull ttf = { { SciCall_GetSelectionStart(), 0 }, szFind2, { 0, 0 } };
 	Sci_Position iPos = SciCall_FindTextFull(searchFlags, &ttf);
 	const Sci_Position iLength = SciCall_GetLength();
