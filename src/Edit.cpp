@@ -5259,7 +5259,7 @@ void EditFindNext(const EDITFINDREPLACE *lpefr, bool fExtendSelection) noexcept 
 	const auto iSelLen = SciCall_GetSelTextLength();
 	if (iSelLen != 0)
 	{
-		auto buf = NP2HeapAlloc(iSelLen);
+		auto buf = NP2HeapAlloc(iSelLen + 1);
 		SciCall_GetSelText((char*)buf);
 		strncpy(szFind2, (char*)buf, NP2_FIND_REPLACE_LIMIT);
 		NP2HeapFree(buf);
